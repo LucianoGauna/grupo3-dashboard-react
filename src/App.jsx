@@ -1,16 +1,32 @@
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Products from './pages/Products';
 import Home from './pages/Home';
-import SideBar from './components/SideBar';
-import Sales from './pages/Sales';
-import Clients from './pages/Clients';
+import Profile from './pages/Profile';
+import Sidebar from './components/SideBar';
+import Navbar from './components/Navbar';
+import ProductDetail from './pages/ProductDetail';
+import React from 'react';
+import { UserProvider } from './UserContext';
 
-
-
-function App() {
+const App = () => {
   return (
-    <Home />
+    <UserProvider>
+    <BrowserRouter>
+      <Sidebar />
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Home />} /> 
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/productDetail/:id" element={<ProductDetail />} />
+        <Route path="/users/:id" element={<Profile />} /> 
+      </Routes>
+    </BrowserRouter>
+    </UserProvider>
   );
-}
+};
 
 export default App;
+
+
+
+
