@@ -29,7 +29,7 @@ const Sidebar = () => {
         <div>
           <div className="mb-8">
             <h1 className="text-white font-bold text-2xl tracking-[4px]">
-              DASHBOARD
+              G3 FOOTWEAR
             </h1>
           </div>
           {/* Nav */}
@@ -42,7 +42,7 @@ const Sidebar = () => {
               Inicio
             </Link>
             <Link
-              to="users"
+              to="/"
               className="flex items-center gap-4 text-white py-2 hover:text-gray-400 transition-colors"
             >
               <FaUser />
@@ -52,7 +52,7 @@ const Sidebar = () => {
               </span>
             </Link>
             <Link
-              to="products"
+              to="/"
               className="flex items-center gap-4 text-white py-2 hover:text-gray-400 transition-colors"
             >
               <FaShoppingBasket />
@@ -87,7 +87,7 @@ const Sidebar = () => {
         {/* Logout */}
         <div>
           <Link
-            to="home"
+            to="/"
             className="flex items-center gap-4 text-gray-400 hover:text-gray-200 transition-colors"
           >
             <IoLogOutSharp />

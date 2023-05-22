@@ -17,7 +17,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/login"
+            to="/"
             className="text-[#949DB2] flex items-center gap-2 hover:text-[#E6E5E8] font-medium"
           >
             <p>Luciano Gauna</p>
