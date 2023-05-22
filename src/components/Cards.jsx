@@ -7,11 +7,11 @@ const Cards = () => {
   return (
     <div className="pt-28">
       <h1 className="text-4xl text-[#E6E5E8] font-bold mb-10">Productos</h1>
-      <div className="text-gray-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-8">
+      <div className="text-gray-300 grid grid-cols-1 gap-8 ">
         {products?.length > 0 &&
           products.map((product, index) => (
             <div
-              className="bg-[#282C34] shadow-lg p-8 flex flex-col items-center justify-between rounded-xl w-full sm:w-auto"
+              className="bg-[#282C34] shadow-lg p-8 flex flex-col items-center justify-between xl:flex-row rounded-xl w-full sm:w-auto"
               key={product.id}
             >
               <div className="mb-4">
