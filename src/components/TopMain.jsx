@@ -1,4 +1,5 @@
 import { FaShoppingBasket, FaUser } from 'react-icons/fa';
+import { CgAdidas } from 'react-icons/cg'
 import { BiCategory } from 'react-icons/bi';
 import { useFetch } from '../hooks/useFetch';
 import { useFetchUsers } from '../hooks/useFetchUsers';
@@ -87,11 +88,11 @@ const TopMain = () => {
                   <p className="mb-0 font-sans font-semibold leading-normal uppercase text-white text-sm">
                     Total de marcas
                   </p>
-                  <h5 className="mb-2 text-2xl font-bold text-[#ADB0BB]">4</h5>
+                  <h5 className="mb-2 text-2xl font-bold text-[#ADB0BB]">9</h5>
                 </div>
                 <div className="px-3 text-right basis-1/3">
                   <div className="inline-block w-12 h-12 text-center rounded-full bg-[#03C9D7]">
-                    <i></i>
+                    <CgAdidas className="text-lg relative top-3.5 left-3.5 text-white" />
                   </div>
                 </div>
               </div>
