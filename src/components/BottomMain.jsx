@@ -7,7 +7,7 @@ const BottomMain = () => {
     <div className="w-full max-w-full mt-6 mb-6 lg:mb-0 overflow-x-auto ps">
       <div className="relative flex flex-col min-w-0 break-words bg-[#383D49] border-0 border-solid shadow-xl border-black-125 rounded-2xl bg-clip-border">
         <div className="p-4 pb-0 mb-0 rounded-t-4">
-          <div className="flex justify-between">
+          <div className="text-center">
             <h6 className="mb-2 text-white inline-flex rounded bg-[#13C296] py-1 px-2 text-sm font-medium text-white hover:bg-opacity-90">
               Listado de productos
             </h6>

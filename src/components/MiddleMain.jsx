@@ -19,12 +19,12 @@ const MiddleMain = () => {
                   products[products.length - 1].images[0].name
                 }`}
                 alt={products[products.length - 1].name}
-                className="object-contain w-48 h-auto"
+                className="object-contain w-48 h-auto rounded"
               />
             )}
           </div>
           <div className="p-6">
-            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white">
+            <h4 className="mb-3 text-xl font-semibold text-gray-300 dark:text-white">
               {products?.length > 0 && products[products.length - 1].name}
             </h4>
             <p className="font-medium text-[#ADB0BB]">
